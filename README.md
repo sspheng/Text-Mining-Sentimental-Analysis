@@ -116,7 +116,22 @@ Note that here, the sentences in summary are generated, not just extracted from 
 
 M. WHAT IS WORD2VEC ARCHITECTURE (SKIP GRAMS VS CBOW) ?
 
+Word2Vec is a shallow, two-layer neural networks which is trained to reconstruct linguistic contexts of words. It takes as its input a large corpus of words and produces a vector space, typically of several hundred dimensions, with each unique word in the corpus being assigned a corresponding vector in the space. Word vectors are positioned in the vector space such that words that share common contexts in the corpus are located in close proximity to one another in the space.Word2Vec is a particularly computationally-efficient predictive model for learning word embeddings from raw text.It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.Algorithmically, these models are similar.
 
+![image](https://github.com/sspheng/Text-Mining-Sentimental-Analysis/assets/78303183/f8ec4385-0c28-4ef9-b392-5313eca154d9)
+
+N. WORD2VEC ARCHITECTURE
+
+![image](https://github.com/sspheng/Text-Mining-Sentimental-Analysis/assets/78303183/95a6b2fd-18db-426c-bd45-95791c675529)
+
+
+The hidden layer operates as a lookup table. The output of the hidden layer is just the “word vector” for the input word.More concretely, if you multiply a 1 x 10,000 one-hot vector by a 10,000 x 300 matrix, it will effectively just select the matrix row corresponding to the ‘1’.
+
+![image](https://github.com/sspheng/Text-Mining-Sentimental-Analysis/assets/78303183/ffafc4ab-fed2-47e9-b0d4-fca84a8b430b)
+
+L. TEXT CLASSIFICATION
+
+Text claification is the process of categorizing the text into a group of words. By using NLP, text classification can automatically analyze text and then assign a set of predefined tags or categories based on its context. NLP is used for sentiment analysis, topic detection, and language detection.There is mainly three text classification approach-Rule-based System, Machine System; Hybrid System.
 
 
 
